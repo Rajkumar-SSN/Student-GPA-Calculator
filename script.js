@@ -7,26 +7,24 @@ function registerAfterCalculation()
     
     var studentInputName = document.getElementById("inputName")
     var studentPopupName = document.getElementById("studentName")
-
     var name = studentInputName.value
     studentPopupName.textContent = `Hello ${name}`
-
 }
-
 
 function closePopup()
 {
     popupbox.style.display = "none"
     popupOverlay.style.display = "none"
-    
-    var closebtn = document.getElementById("closeBtn")
+}
+
+function exitProject(){
+    var closebtn = document.getElementById("exit")
     closebtn.addEventListener("click", function() {
         window.location.href = "thankPage.html";})
 }
 
 
 const grades = [];
-
 function addGrade() {
     const courseName = document.getElementById("courseName").value;
     const grade = document.getElementById("grade").value;
