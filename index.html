@@ -62,9 +62,11 @@
             </select><br> 
         </form>
 
-        <div class="registerBtn">
-            <button id="registerBtn" onclick="registerAfterCalculation()">Register</button>
+        <div class="BtnCenter">
+            <button onclick="registerAfterCalculation()">Register</button>
+            <button id="exit" onclick="exitProject()">Close</button>
         </div>
+
     </nav>
     
     
@@ -78,26 +80,26 @@
             <input type="text" id="courseName">
             <label for="grade">Grade:</label>
             <input type="text" id="grade"><br>
-            <div class="registerBtn">
+            <div class="BtnCenter">
                 <button onclick="addGrade()">Add Grade</button>
             </div>
         </div>
 
         <div id="gradeList">
             <h2>Grades List</h2>
-            <ul id="grades">
+            <ol id="grades">
                 <!-- Grade items will be added here dynamically -->
-            </ul>
+            </ol>
         </div>
 
-        <div id="gpaDisplay">
-            <br>
+        <div id="gpaDisplay" class="BtnCenter">
+            <br><hr>
             <h2>GPA</h2>
             <p id="gpa">GPA: 0.00</p>
         </div>
 
-        <div class="registerBtn">
-            <button id="closeBtn" onclick="closePopup()">Close</button>
+        <div class="BtnCenter">
+            <button id="closeButton" onclick="closePopup()">Close</button>
         </div>
     </div>
 
