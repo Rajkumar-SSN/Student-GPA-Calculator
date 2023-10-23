@@ -48,7 +48,7 @@ label{
     font-size: 18px;
 }
 
-.registerBtn{
+.BtnCenter{
     text-align: center;
     margin-top: 10px;
 }
@@ -77,6 +77,7 @@ label{
 }
 
 .popupbox{
+    background: linear-gradient(45deg,dodgerblue,white,rgb(241, 98, 241));
     position: absolute;
     z-index: 2;
     background-color: white;
